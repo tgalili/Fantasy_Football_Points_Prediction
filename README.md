@@ -11,6 +11,6 @@ The data preparation begins with loading the historical player statistics from a
 2. Initial Data Exploration: Basic exploration involves displaying the first few rows, summarizing data types and non-null counts, and generating descriptive statistics to understand the data structure and identify any issues.
 3. Handling Missing Values: Missing data is addressed using forward fill and backward fill methods, which fill gaps by propagating the last valid observation forward or backward.
 4. Feature Engineering: New features are created to enhance predictive power, including:
-* 3-game rolling average of fantasy points: Smooths recent player performance.
-* Exceptional performance indicator: Binary feature for high-scoring games.
-* Normalized team performance: Averages fantasy points per game at the team level, normalized against the league average.
+    * 3-game rolling average of fantasy points: Smooths recent player performance.
+    * Exceptional performance indicator: Binary feature for high-scoring games.
+    * Normalized team performance: Averages fantasy points per game at the team level, normalized against the league average.
