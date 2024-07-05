@@ -17,17 +17,17 @@ The data preparation begins with loading the historical player statistics from a
 ## Reading and Visualizing the Dataset in Python
 Once the necessary data contained in a SQLite database was obtained, the data was read into Python as a DataFrame. This step is crucial for ensuring that the data is well-structured and easily accessible for further analysis and modeling. To ensure the replicability of results and consistency in future comparisons, I maintained a consistent random state during sampling.
 
-### 1. Reading the Data:
+1. Reading the Data:
    The data was read from the SQLite database nfl_stats.db using the SQLAlchemy library. This allowed me to seamlessly load the player statistics into a pandas DataFrame, which provides powerful data manipulation capabilities.
 
-### 2. Summary Statistics:
+2. Summary Statistics:
    To familiarize myself with the dataset, I generated summary statistics. Using df.info(), I visualized the datatypes and the number of non-null entries for each variable. This dataset contained various data types, including integers and floats, and provided an overview of the data's completeness.
    Next, df.describe() offered a descriptive statistics summary for each variable, displaying the count, mean, standard deviation, minimum, maximum, and percentiles. This step helped in understanding the central tendencies and variability within the dataset.
 
-### 3. Handling Missing Values:
+3. Handling Missing Values:
    Missing values were identified and addressed using forward fill and backward fill methods. Forward fill propagates the last valid observation forward to fill gaps, while backward fill does the same but in reverse. This ensured that the dataset was complete and ready for analysis without introducing biases from missing data.
 
-### 4. Visualizing the Data:
+4. Visualizing the Data:
    Visualization is a critical step in data analysis as it helps in uncovering patterns and relationships that are not immediately apparent from raw data. Using Python’s visualization libraries, such as Matplotlib and Seaborn, I created several plots to explore the data.
       * Distribution of Weekly Points: A histogram was used to visualize the distribution of the target variable FantPt (weekly points). This plot revealed how fantasy points are distributed across players and highlighted any skewness or outliers in the data.
       * Distribution of Total Points: Similarly, a histogram was plotted for the total points (PPR). This helped in understanding the overall performance distribution of players across the season.
