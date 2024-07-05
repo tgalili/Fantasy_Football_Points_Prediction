@@ -14,3 +14,26 @@ The data preparation begins with loading the historical player statistics from a
     * 3-game rolling average of fantasy points: Smooths recent player performance.
     * Exceptional performance indicator: Binary feature for high-scoring games.
     * Normalized team performance: Averages fantasy points per game at the team level, normalized against the league average.
+## Reading and Visualizing the Dataset in Python
+Once the necessary data contained in a SQLite database was obtained, the data was read into Python as a DataFrame. This step is crucial for ensuring that the data is well-structured and easily accessible for further analysis and modeling. To ensure the replicability of results and consistency in future comparisons, I maintained a consistent random state during sampling.
+
+1. Reading the Data:
+   The data was read from the SQLite database nfl_stats.db using the SQLAlchemy library. This allowed me to seamlessly load the player statistics into a pandas DataFrame, which provides powerful data manipulation capabilities.
+
+2. Summary Statistics:
+   To familiarize myself with the dataset, I generated summary statistics. Using df.info(), I visualized the datatypes and the number of non-null entries for each variable. This dataset contained various data types, including integers and floats, and provided an overview of the data's completeness.
+   Next, df.describe() offered a descriptive statistics summary for each variable, displaying the count, mean, standard deviation, minimum, maximum, and percentiles. This step helped in understanding the central tendencies and variability within the dataset.
+
+3. Handling Missing Values:
+   Missing values were identified and addressed using forward fill and backward fill methods. Forward fill propagates the last valid observation forward to fill gaps, while backward fill does the same but in reverse. This ensured that the dataset was complete and ready for analysis without introducing biases from missing data.
+
+4. Visualizing the Data:
+   Visualization is a critical step in data analysis as it helps in uncovering patterns and relationships that are not immediately apparent from raw data. Using Python’s visualization libraries, such as Matplotlib and Seaborn, I created several plots to explore the data.
+      * Distribution of Weekly Points: A histogram was used to visualize the distribution of the target variable FantPt (weekly points). This plot revealed how fantasy points are distributed across players and highlighted any skewness or outliers in the data.
+      * Distribution of Total Points: Similarly, a histogram was plotted for the total points (PPR). This helped in understanding the overall performance distribution of players across the season.
+      * Scatter Plot of Player Age vs Total Points: To examine the relationship between player age and total points, a scatter plot was created. This visualization provided insights into whether age had any significant effect on a player's total fantasy points.
+      * Correlation Matrix: A correlation matrix heatmap was generated to visualize the relationships between various features and the target variable. Correlations are represented as values between +1 and -1, where +1 indicates a perfect positive correlation, -1 indicates a perfect negative correlation, and 0 indicates no correlation. The heatmap highlighted which features were strongly correlated with FantPt and with each other, informing feature engineering decisions.
+
+These visualizations and summaries were instrumental in identifying key patterns and relationships within the data. For instance, the correlation matrix revealed significant positive correlations between team performance and weekly fantasy points, indicating that team dynamics play a crucial role in individual player performance. Understanding these correlations is essential for feature engineering and model building, ensuring that the most relevant and predictive features are used in the models.
+
+By thoroughly reading and visualizing the dataset in Python, I ensured a comprehensive understanding of the data’s structure and relationships. This groundwork is essential for effective feature extraction, model training, and evaluation, ultimately leading to more accurate predictions of fantasy football points.
