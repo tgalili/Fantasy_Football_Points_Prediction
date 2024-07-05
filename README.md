@@ -37,3 +37,21 @@ Once the necessary data contained in a SQLite database was obtained, the data wa
 These visualizations and summaries were instrumental in identifying key patterns and relationships within the data. For instance, the correlation matrix revealed significant positive correlations between team performance and weekly fantasy points, indicating that team dynamics play a crucial role in individual player performance. Understanding these correlations is essential for feature engineering and model building, ensuring that the most relevant and predictive features are used in the models.
 
 By thoroughly reading and visualizing the dataset in Python, I ensured a comprehensive understanding of the data’s structure and relationships. This groundwork is essential for effective feature extraction, model training, and evaluation, ultimately leading to more accurate predictions of fantasy football points.
+## Feature Engineering
+In this project, feature engineering was used to create new variables that enhance the prediction of fantasy football points:
+1. Rolling Average of Fantasy Points:
+   * 3-game Rolling Average: Smoothing recent performance with a 3-game rolling average.
+2. Exceptional Performance Indicator:
+   * Binary Indicator: Flagging games where players scored over 20 points.
+3. Team Performance Metrics:
+   * Team Average Fantasy Points: Average points per game for each team.
+   * Normalized Team Performance: Team performance relative to the league average.
+4. Feature and Target Selection:
+   * Key features: FantPt_rolling_avg, exceptional_performance, normalized_team_performance, Age.
+   * Target variable: FantPt.
+5. Handling Missing and Infinite Values:
+   * Replaced infinite values and dropped missing values.
+6. Feature Scaling:
+   * Standardized features using StandardScaler.
+7. Data Splitting:
+   * Split data into training and testing sets.
