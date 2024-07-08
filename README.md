@@ -34,6 +34,15 @@ Once the necessary data contained in a SQLite database was obtained, the data wa
       * Scatter Plot of Player Age vs Total Points: To examine the relationship between player age and total points, a scatter plot was created. This visualization provided insights into whether age had any significant effect on a player's total fantasy points.
       * Correlation Matrix: A correlation matrix heatmap was generated to visualize the relationships between various features and the target variable. Correlations are represented as values between +1 and -1, where +1 indicates a perfect positive correlation, -1 indicates a perfect negative correlation, and 0 indicates no correlation. The heatmap highlighted which features were strongly correlated with FantPt and with each other, informing feature engineering decisions.
 
+
+| ![Original Variable Scatter Plots](https://github.com/tgalili/Fantasy_Football_Points_Prediction/blob/main/images/Linear%20Regression.png) | 
+|:--:| 
+| *Figure 1 - Scatter Plot* |
+
+| ![Original Variable Correlation Heat Map](https://github.com/tgalili/Fantasy_Football_Points_Prediction/blob/main/images/Correlation%20Matrix.png) |
+|:--:| 
+| *Figure 2 - Correlation Heat Map* |
+
 These visualizations and summaries were instrumental in identifying key patterns and relationships within the data. For instance, the correlation matrix revealed significant positive correlations between team performance and weekly fantasy points, indicating that team dynamics play a crucial role in individual player performance. Understanding these correlations is essential for feature engineering and model building, ensuring that the most relevant and predictive features are used in the models.
 
 By thoroughly reading and visualizing the dataset in Python, I ensured a comprehensive understanding of the data’s structure and relationships. This groundwork is essential for effective feature extraction, model training, and evaluation, ultimately leading to more accurate predictions of fantasy football points.
