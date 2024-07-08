@@ -1,6 +1,22 @@
 # Fantasy Football Points Prediction
 Predicting fantasy football points for the 2024 NFL season using Python and SQL
 
+## Contents
+
+- [Introduction](#introduction)
+- [Data Preparation and Description Using SQLite](#data-preparation-and-description-using-sqlite)
+- [Reading and Visualizing the Dataset on Python](#reading-and-visualizing-the-dataset-on-python)
+- [Feature Engineering](#feature-engineering)
+- [Train and Test Split with Cross Validation](#train-and-test-split-with-cross-validation)
+- [Regression Model Implementations](#regression-model-implementations)
+  - [Liner Regression with OLS](#a-ordinary-least-squares)
+  - [Lasso](#b-lasso)
+  - [Ridge](#c-ridge)
+  - [Gradient Boosting XR](#d-gradient-boosting-xr)
+- [Validation](#validation-of-best-model)
+- [Conclusion](#conclusion)
+- [Citations](#citations)
+
 ## Introduction
 The goal of this project is to forecast fantasy football points for the 2024 NFL season by investigating and utilizing different machine learning regression algorithms. This project aims to develop models that forecast weekly and total fantasy points using historical player statistics and team dynamics, in a manner akin to the method used to predict residential property prices based on physical and locational attributes.
 To deal with missing values and guarantee quality, the data is first preprocessed. After that, an analysis is conducted to highlight the key attributes of the variables, including any correlations and discernible patterns. Important components designed to improve the predictive capacity of the models include normalized team performance metrics and rolling averages of fantasy points.
