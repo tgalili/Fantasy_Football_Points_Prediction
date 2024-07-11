@@ -9,7 +9,7 @@ Predicting fantasy football points for the 2024 NFL season using Python and SQL
 - [Feature Engineering](#feature-engineering)
 - [Train and Test Split with Cross Validation](#train-and-test-split-with-cross-validation)
 - [Regression Model Implementations](#regression-model-implementations)
-  - [Scaling and Polynomial Features](#Scaling-and-Polynomial-Features)
+  - [Scaling and Polynomial Features](Scaling-and-Polynomial-Features)
   - [Lasso](#b-lasso)
   - [Ridge](#c-ridge)
   - [Gradient Boosting XR](#d-gradient-boosting-xr)
