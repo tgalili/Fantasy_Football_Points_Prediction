@@ -103,3 +103,9 @@ To predict fantasy football points, I employed multiple regression models, focus
   * Hyperparameter Tuning: Used RandomizedSearchCV for hyperparameter tuning, optimizing parameters like max_depth, learning_rate, and subsample ratio.
   * Best Model: Achieved an MSE of 2279.02 and an R² of 86.38%, indicating a highly accurate model suitable for large datasets.
 By systematically implementing and comparing these regression models, I ensured a robust approach to predicting fantasy football points, leveraging both linear and ensemble methods to achieve high accuracy and low error rates.
+
+## Validation of Best Model
+
+## Conclusion
+
+## Citations
