@@ -9,7 +9,7 @@ Predicting fantasy football points for the 2024 NFL season using Python and SQL
 - [Feature Engineering](#feature-engineering)
 - [Train and Test Split with Cross Validation](#train-and-test-split-with-cross-validation)
 - [Regression Model Implementations](#regression-model-implementations)
-  - [Scaling and Polynomial Features](Scaling-and-Polynomial-Features)
+  - [Scaling and Polynomial Features](#scaling-and-polynomial-features)
   - [Lasso](#b-lasso)
   - [Ridge](#c-ridge)
   - [Gradient Boosting XR](#d-gradient-boosting-xr)
@@ -84,7 +84,7 @@ In this project, feature engineering was used to create new variables that enhan
 ## Regression Model Implementations
 To predict fantasy football points, I employed multiple regression models, focusing on feature scaling, combinations of variables, and polynomial features to find the best model with the lowest Mean Squared Error (MSE).
 
-#1. Scaling and Polynomial Features:
+# 1. Scaling and Polynomial Features:
 
   * Standardized the variables to avoid multicollinearity, especially for polynomial and interaction terms.
   * Used sklearn's PolynomialFeatures to create interaction terms and polynomial features up to the 2nd degree.
