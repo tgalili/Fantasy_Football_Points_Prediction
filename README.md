@@ -8,7 +8,7 @@ Predicting fantasy football points for the 2024 NFL season using Python and SQL
 - [Reading and Visualizing the Dataset on Python](#reading-and-visualizing-the-dataset-on-python)
 - [Feature Engineering](#feature-engineering)
 - [Regression Model Implementations](#regression-model-implementations)
-  - [Ordinary Least Squares](#a-ordinary-least-squares)
+  - [Ordinary Least Squares](#a-ordinary-least-squares-ols)
   - [Random Forest Regressor](#b-random-forest-regressor)
   - [Gradient Boosting](#c-gradient-boosting)
 - [Validation](#validation-of-best-model)
