@@ -93,13 +93,13 @@ To predict fantasy football points, I employed multiple regression models, focus
   * Implemented a function to try all possible combinations of feature variables.
   * Tested combinations to find the best-performing model with the lowest MSE.
 
-A. Ordinary Least Squares (OLS)
+### A. Ordinary Least Squares (OLS)
   * Linear Regression: Fits a linear model with coefficients to minimize the residual sum of squares between observed and predicted targets.
   * Best Model: Identified using "neg_mean_squared_error" as the scoring metric. The best combination included features such as 'FantPt_rolling_avg', 'exceptional_performance', and 'normalized_team_performance', resulting in the lowest MSE.
-B. Random Forest Regressor
+### B. Random Forest Regressor
   * Random Forest: An ensemble method that fits multiple decision trees and averages their predictions to improve accuracy and control overfitting.
   * Best Model: The combination of features provided robust performance, with significant improvements over linear models in terms of accuracy and MSE.
-C. Gradient Boosting
+### C. Gradient Boosting
   * XGBoost: An advanced ensemble method that builds successive trees to correct errors of previous ones, enhancing model accuracy.
   * Hyperparameter Tuning: Used RandomizedSearchCV for hyperparameter tuning, optimizing parameters like max_depth, learning_rate, and subsample ratio.
   * Best Model: Achieved an MSE of 2279.02 and an R² of 86.38%, indicating a highly accurate model suitable for large datasets.
