@@ -1,5 +1,7 @@
 # Fantasy Football Points Prediction
-Predicting fantasy football points for the 2024 NFL season using Python and SQL
+Predicting fantasy football points for any given player using machine learning tools.
+
+Prepared By: Tamir Galili
 
 ## Contents
 
